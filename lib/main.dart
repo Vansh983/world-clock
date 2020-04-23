@@ -4,7 +4,7 @@ import 'package:worldtime/pages/location.dart';
 import 'package:worldtime/pages/loading.dart';
 
 void main() => runApp(MaterialApp(
-  initialRoute: '/home',
+  initialRoute: '/',
   routes: {
     '/': (context) => Loading(),
     '/home': (context) => Home(),
