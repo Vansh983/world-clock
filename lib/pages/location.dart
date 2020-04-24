@@ -37,10 +37,23 @@ class _ChooseLocationState extends State<ChooseLocation> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text('Choose Location'),
-        centerTitle: true,
-        elevation: 0,
+        backgroundColor: Colors.white,
+
+        title: Text(
+          'Choose Location',
+          style: TextStyle(
+            color: Colors.black,
+            fontFamily: 'Josefin',
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+          ),
+        ),
+        iconTheme: IconThemeData(
+          color: Colors.black, //change your color here
+        ),
+//        centerTitle: true,
+//        elevation: 0,
+
       ),
       body: ListView.builder(
         itemCount: locations.length,
