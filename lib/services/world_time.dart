@@ -19,7 +19,7 @@ class WorldTime {
       Map data = jsonDecode(response.body);
 
       String datetime = data['datetime'];
-      String offset = data['utc_offset'].substring(1,3);
+      String offset = data['utc_offset'].substring(0,3);
       //print(datetime);
       //print(offset);
 
