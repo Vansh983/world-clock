@@ -9,8 +9,6 @@ class Loading extends StatefulWidget {
 
 class _LoadingState extends State<Loading> {
 
-  String time = 'loading';
-
   void setupWorldTime() async {
     WorldTime instance = WorldTime(location: 'Berlin', flag: 'germany.png', url: 'Europe/Berlin');
     await instance.getTime();
@@ -36,7 +34,6 @@ class _LoadingState extends State<Loading> {
           child: SpinKitDoubleBounce(
             color: Colors.white,
             size: 50.0,
-
           ),
       ),
     );

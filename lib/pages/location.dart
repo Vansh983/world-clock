@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:worldtime/services/world_time.dart';
-import 'package:worldtime/services/world_time.dart';
 
 class ChooseLocation extends StatefulWidget {
   @override
@@ -36,6 +35,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
       'isDayTime': instance.isDaytime,
     });
   }
+
+  @override
+  void initState() {
+    super.initState();
+
+}
 
   @override
   Widget build(BuildContext context) {
